@@ -1,0 +1,23 @@
+ import time
+
+
+intial= time.time()
+# print(intial)
+k=0
+while k<45:
+    print("This Is Aryan")
+    k=k+1
+print("While Loop Took This Much Time:", time.time()- intial, "Seconds")
+
+intial2= time.time()
+for i in range(45):
+    print("This Is Aryan")
+print("For Loop Took This Much Time:", time.time()- intial2, "Seconds")
+
+# Syntax for time sleep is :
+# time.sleep(5)
+#Here value in bracket is the seconds, this is used to make user wait
+
+#Syntax For Local Time Is:
+localtime=time.asctime(time.localtime(time.time()))
+print(localtime)
